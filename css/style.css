@@ -3544,6 +3544,10 @@ hr {
     color: #ffae00;
 }
 
+.bg_white {
+    background-color: #fff;
+}
+
 .bg_pink {
     background-color: #e41953;
 }
@@ -3831,7 +3835,7 @@ a.filtr-item {
     width: 68px;
     margin-left: -34px;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .view_more:after {
@@ -3897,11 +3901,12 @@ a.filtr-item {
 .work {
     /* display: inline; */
     position: relative;
-    margin: 90px 0;
+    margin: 90px 0 180px;
     padding: 0 25px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 94%;
+    overflow-y: visible;
 }
 
 .work_bg {
@@ -3911,13 +3916,48 @@ a.filtr-item {
     z-index: 2;
 }
 
+.work_bg p {
+    padding: 30px 140px 30px 40px;
+    transition: all .3s;
+}
+
+.work_bg p:before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    left: 134px;
+    width: 75px;
+    top: 40.5px;
+}
+
+.work_bg p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 207px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #e51a52;
+    top: 38px;
+}
+
+.work_bg.go_right p {
+    right: -45px;
+}
+
+.work_bg.go_left p {
+    left: -40px;
+}
+
 .work .go_left.W60 {
-    border: 15px solid #000;
+    border: 18px solid #000;
     box-sizing: border-box;
 }
 
 .work .go_right.W60 {
-    border: 15px solid #e21951;
+    border: 18px solid #e21951;
     box-sizing: border-box;
 }
 
@@ -3935,7 +3975,7 @@ a.filtr-item {
 .work h3 span {
     font-size: 12px;
     position: absolute;
-    top: -20px;
+    top: -16px;
     left: 0;
     font-weight: 200;
     letter-spacing: 1px;
@@ -3949,7 +3989,7 @@ a.filtr-item {
 .work h3 font {
     font-size: 12px;
     position: absolute;
-    top: 4px;
+    top: 6px;
     left: -25px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -3965,8 +4005,36 @@ a.filtr-item {
     right: 25px;
 }
 
+img.web_label {
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    max-width: 150px;
+    width: 27%;
+}
+
 #work1 {
     background-image: url(../images/tilte_04.png);
+}
+
+#work1 .svg_wrapper,
+#work3 .svg_wrapper {
+    bottom: -3%;
+    left: 19%;
+}
+
+#work2 .svg_wrapper,
+#work4 .svg_wrapper {
+    z-index: 40;
+    bottom: -28%;
+    left: 5%;
+    transform: rotate(-66deg);
+    max-width: 65%;
+}
+
+#work2 svg,
+#work4 svg {
+    max-width: 65%;
 }
 
 #work2 {
@@ -3979,6 +4047,27 @@ a.filtr-item {
 
 #work4 {
     background-image: url(../images/tilte_03.png);
+}
+
+#work4 .go_right.W60 {
+    border-color: #000;
+}
+
+.three_dots_wrapper {
+    bottom: -100px;
+    left: 0;
+}
+
+.three_dots_wrapper span {
+    position: relative;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 .about {
