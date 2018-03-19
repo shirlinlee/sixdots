@@ -26,7 +26,17 @@ $(document).ready(function(){
   	});
 
   	/***** WOW Js *****/
-	new WOW().init();
+	// new WOW().init();
+	var wow = new WOW(
+		{
+		boxClass:     'work',      // default
+		animateClass: 'animated', // default
+		offset:       0,          // default
+		mobile:       true,       // default
+		live:         true        // default
+	  }
+	)
+	wow.init();
 
 	/***** Magnific-popup *****/
 	$('.filtr-item').magnificPopup({
