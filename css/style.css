@@ -2249,7 +2249,7 @@ section>* {
 ==================== */
 
 .portfolio {
-    padding: 120px 0 110px;
+    padding: 80px 0 110px;
 }
 
 .portfolio-top {
@@ -3553,7 +3553,7 @@ hr {
 }
 
 .bg_l_pink {
-    background-color: #ffebf1;
+    background-color: rgba(227, 26, 80, 0.09);
 }
 
 .bg_black {
@@ -3921,15 +3921,16 @@ a.filtr-item {
 .work_bg p {
     padding: 30px 140px 30px 40px;
     transition: all .3s;
+    width: 262px;
+    white-space: nowrap;
 }
 
-.work_bg p:hover:before {
+.work_bg:hover p:before {
     width: 0;
-    transition: all .3s;
 }
-.work_bg p:hover:after {
+
+.work_bg:hover p:after {
     transform: scale(1.5);
-    transition: all .3s .3s;
 }
 
 .work_bg p:before {
@@ -3940,6 +3941,7 @@ a.filtr-item {
     right: 50px;
     width: 75px;
     top: 40.5px;
+    transition: all .3s;
 }
 
 .work_bg p:after {
@@ -3952,6 +3954,34 @@ a.filtr-item {
     border-radius: 50%;
     background: #e51a52;
     top: 37px;
+    transition: all .3s .3s;
+}
+
+.work_bg p span {
+    display: inline;
+    transition: all .3s;
+}
+
+.work_bg:hover p span {
+    letter-spacing: 7px;
+}
+
+.work_bg p span:after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: rgba(226, 25, 81, 0.39);
+    border-radius: 50%;
+    right: 41px;
+    top: 30px;
+    transition: all .5s .3s;
+    transform: scale(0);
+}
+
+.work_bg:hover p span:after {
+    transform: scale(1);
 }
 
 .work_bg.go_right p {
@@ -3964,9 +3994,10 @@ a.filtr-item {
 
 .work .go_left.W60 {
     border: 18px solid #000;
+    background-color: #000;
     box-sizing: border-box;
     opacity: 0;
-    transition: opacity .7s .2s;
+    transition: opacity .7s .2s, transform .5s;
 }
 
 .work.animated .go_left.W60 {
@@ -3975,30 +4006,48 @@ a.filtr-item {
 
 .work .go_right.W60 {
     border: 18px solid #e21951;
+    background-color: #e51a52;
     box-sizing: border-box;
     opacity: 0;
-    transition: opacity .7s .2s;
-    
+    transition: opacity .7s .2s, transform .5s;
 }
 
 .work.animated .go_right.W60 {
     opacity: 1;
 }
 
-svg {
-    transform: rotate(360deg);
+.svg_wrapper svg {
+    transform: rotate(360deg) scale(0);
     transition: all 1s .5s;
-    
 }
 
-.work.animated svg {
-    transform: rotate(0deg);
+.work.animated .svg_wrapper svg {
+    transform: rotate(0deg) scale(1);
 }
 
 .work .W60 {
     margin-bottom: 180px;
     z-index: 5;
     position: relative;
+    transition: all .5s;
+}
+
+.work .W60>img {
+    opacity: .88;
+    transition: opacity .4s;
+}
+
+.work .W60:hover {
+    transform: translate(0, -15px)
+}
+
+.work .W60:hover>img {
+    opacity: 1;
+}
+
+.work .W60.hover {
+    border-width: 25px;
+    margin-bottom: 173px;
 }
 
 .go_left h3 {
@@ -4018,6 +4067,11 @@ svg {
 .work h3 {
     letter-spacing: 2px;
     font-weight: 900;
+    transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.work .W60:hover h3 {
+    letter-spacing: 9px;
 }
 
 .work h3 font {
@@ -4039,16 +4093,35 @@ svg {
     right: 25px;
 }
 
-img.web_label {
+.work .W60>img.web_label {
     right: 0;
     top: 0;
     transform: translate(50%, -50%);
     max-width: 150px;
     width: 27%;
+    opacity: 1;
+    z-index: 6;
+    margin: 0;
 }
 
 #work1 {
     background-image: url(../images/tilte_04.png);
+}
+
+#work1 .svg_rock,
+#work3 .svg_rock {
+    left: -3%;
+    top: 30%;
+    width: 100px;
+}
+
+#work2 .svg_rock,
+#work4 .svg_rock {
+    left: 51%;
+    top: 60%;
+    width: 110px;
+    z-index: 4;
+    transform: rotate(-48deg);
 }
 
 #work1 .svg_wrapper,
@@ -4059,7 +4132,7 @@ img.web_label {
 
 #work2 .svg_wrapper,
 #work4 .svg_wrapper {
-    z-index: 40;
+    z-index: 1;
     bottom: -28%;
     left: 5%;
     transform: rotate(-66deg);
@@ -4085,6 +4158,7 @@ img.web_label {
 
 #work4 .go_right.W60 {
     border-color: #000;
+    background-color: #000;
 }
 
 .three_dots_wrapper {
