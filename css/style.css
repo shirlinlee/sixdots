@@ -4118,10 +4118,138 @@ a.filtr-item {
     margin: 0;
 }
 
+.line_dots {
+    width: 60px;
+    height: 45px;
+    opacity: .3;
+    animation: lineAni 12s ease infinite;
+    transform-origin: left top;
+}
+
+.line_dots span{
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    margin: 0;
+}
+
+.line_dots font{
+    background-color: #000;
+    display: block;
+    width: 60px;
+    height: 1px;
+    
+}
+
+.line_dots font.l_01{
+    height: 37px;
+    width: 1px;
+    transform: rotate(-40deg);
+    transform-origin: left top;
+}
+
+span.dot.dot1.poA {
+    top: -1px;
+    left: -1px;
+}
+
+span.dot.dot2.poA {
+    left: 60px;
+    top: -1px;
+}
+
+span.dot.dot3.poA {
+    top: 28px;
+    left: 24px;
+}
+
+.ld_01 {
+    top: -9%;
+    left: -15px;
+}
+
+
+.ld_02 {
+    top: 14%;
+    left: 90%;
+}
+
+.ld_03 {
+    top: 70%;
+    left: 30%;
+}
+
+.ld_04 {
+    top: -12%;
+    left: 47%;
+}
+
+.ld_05 {
+    top: 20%;
+    left: 17%;
+}
+
+.ld_06 {
+    top: 90%;
+    left: 75%;
+}
+
+.ld_01>div {
+    transform: rotate(200deg);
+}
+.ld_02>div {
+    transform: rotate(112deg);
+}
+.ld_03>div {
+    transform: rotate(348deg);
+}
+.ld_04>div {
+    transform: rotate(-46deg);
+}
+.ld_05>div {
+    transform: rotate(130deg);
+}
+.ld_06>div {
+    transform: rotate(205deg);
+}
+
 #work1 {
     background-image: url(../images/tilte_04.png);
 }
 
+.svg_rock {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translatey(0px);
+  }
+  50% {
+      transform: translatey(-25px);
+  }
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+@keyframes lineAni {
+    0% {
+        transform: translatey(0px);
+        opacity: .1;
+    }
+    50% {
+        transform: translatey(25px);
+        opacity: .3;
+        
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: .1;
+        
+    }
+  
+}
 #work1 .svg_rock,
 #work3 .svg_rock {
     left: -3%;
