@@ -398,7 +398,7 @@ button {
     margin-top: 150px;
     min-height: 300px;
     left: 0;
-    padding-left: 20px;
+    padding-left: 45px;
     letter-spacing: 1px;
 }
 
@@ -1854,7 +1854,7 @@ section>* {
 .home-contact {
     background-color: #fff;
     /* text-align: center; */
-    margin: 50px 0 0;
+    padding: 70px 0 50px;
 }
 
 .about-contact .row {
@@ -3344,10 +3344,10 @@ footer p a:focus {
 .back-to-top {
     position: fixed;
     z-index: 900;
-    width: 100px;
+    width: 90px;
     cursor: pointer;
-    bottom: 180px;
-    right: 25px;
+    bottom: 25px;
+    right: 20px;
     transition: all 0.2s ease 0s;
 }
 
@@ -3817,6 +3817,18 @@ hr {
     margin: 5px;
 }
 
+#particles-home .six_dots {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 41px;
+}
+
+.six_dots .dot {
+    margin: 4px;
+    float: left;
+}
+
 .title {
     padding: 100px 0;
     position: relative;
@@ -3830,7 +3842,7 @@ a.filtr-item {
 
 .view_more {
     bottom: 0;
-    height: 73px;
+    height: 78px;
     left: 50%;
     width: 68px;
     margin-left: -34px;
@@ -3842,14 +3854,15 @@ a.filtr-item {
 .view_more:after {
     content: "";
     display: block;
-    height: 45px;
+    height: 37px;
     width: 1px;
     background: #e71751;
     margin: 12px auto 0;
 }
 
 .view_more:hover {
-    height: 50px;
+    /* height: 50px; */
+    padding-top: 15px;
 }
 
 .particles-intro p:before {
@@ -4000,7 +4013,7 @@ a.filtr-item {
     transition: opacity .7s .2s, transform .5s;
 }
 
-.work.animated .go_left.W60 {
+.work .animated.go_left.W60 {
     opacity: 1;
 }
 
@@ -4012,16 +4025,21 @@ a.filtr-item {
     transition: opacity .7s .2s, transform .5s;
 }
 
-.work.animated .go_right.W60 {
+.work .animated.go_right.W60 {
     opacity: 1;
 }
 
-.svg_wrapper svg {
+.svg_wrapper.turn1 svg {
     transform: rotate(360deg) scale(0);
-    transition: all 1s .5s;
+    transition: all 1s .2s;
 }
 
-.work.animated .svg_wrapper svg {
+.svg_wrapper.turn2 svg {
+    transform: rotate(-360deg) scale(0);
+    transition: all 1s .2s;
+}
+
+.work .animated.svg_wrapper svg {
     transform: rotate(0deg) scale(1);
 }
 
@@ -4033,22 +4051,18 @@ a.filtr-item {
 }
 
 .work .W60>img {
-    opacity: .88;
+    opacity: .9;
     transition: opacity .4s;
 }
 
-.work .W60:hover {
+.work:hover .W60 {
     transform: translate(0, -15px)
 }
 
-.work .W60:hover>img {
+.work:hover .W60>img {
     opacity: 1;
 }
 
-.work .W60.hover {
-    border-width: 25px;
-    margin-bottom: 173px;
-}
 
 .go_left h3 {
     bottom: -140px;
@@ -4070,7 +4084,7 @@ a.filtr-item {
     transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.work .W60:hover h3 {
+.work .W60 h3:hover {
     letter-spacing: 9px;
 }
 
@@ -4117,7 +4131,7 @@ a.filtr-item {
 
 #work2 .svg_rock,
 #work4 .svg_rock {
-    left: 51%;
+    left: 46%;
     top: 60%;
     width: 110px;
     z-index: 4;

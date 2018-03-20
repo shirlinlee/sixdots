@@ -28,7 +28,7 @@ $(document).ready(function() {
     /***** WOW Js *****/
     // new WOW().init();
     var wow = new WOW({
-        boxClass: 'work', // default
+        boxClass: 'ani', // default
         animateClass: 'animated', // default
         offset: 0, // default
         mobile: true, // default
