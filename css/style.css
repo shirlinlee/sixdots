@@ -3495,6 +3495,7 @@ body {
 body,
 html {
     width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -4063,7 +4064,6 @@ a.filtr-item {
     opacity: 1;
 }
 
-
 .go_left h3 {
     bottom: -140px;
     left: 8px;
@@ -4126,22 +4126,21 @@ a.filtr-item {
     transform-origin: left top;
 }
 
-.line_dots span{
+.line_dots span {
     width: 3px;
     height: 3px;
     background-color: #000;
     margin: 0;
 }
 
-.line_dots font{
+.line_dots font {
     background-color: #000;
     display: block;
     width: 60px;
     height: 1px;
-    
 }
 
-.line_dots font.l_01{
+.line_dots font.l_01 {
     height: 37px;
     width: 1px;
     transform: rotate(-40deg);
@@ -4167,7 +4166,6 @@ span.dot.dot3.poA {
     top: -9%;
     left: -15px;
 }
-
 
 .ld_02 {
     top: 14%;
@@ -4197,18 +4195,23 @@ span.dot.dot3.poA {
 .ld_01>div {
     transform: rotate(200deg);
 }
+
 .ld_02>div {
     transform: rotate(112deg);
 }
+
 .ld_03>div {
     transform: rotate(348deg);
 }
+
 .ld_04>div {
     transform: rotate(-46deg);
 }
+
 .ld_05>div {
     transform: rotate(130deg);
 }
+
 .ld_06>div {
     transform: rotate(205deg);
 }
@@ -4222,15 +4225,15 @@ span.dot.dot3.poA {
 }
 
 @keyframes float {
-  0% {
-      transform: translatey(0px);
-  }
-  50% {
-      transform: translatey(-25px);
-  }
-  100% {
-      transform: translatey(0px);
-  }
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-25px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 @keyframes lineAni {
@@ -4241,15 +4244,13 @@ span.dot.dot3.poA {
     50% {
         transform: translatey(25px);
         opacity: .3;
-        
     }
     100% {
         transform: translatey(0px);
         opacity: .1;
-        
     }
-  
 }
+
 #work1 .svg_rock,
 #work3 .svg_rock {
     left: -3%;
