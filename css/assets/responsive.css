@@ -7,6 +7,20 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .particles-intro.inline {
+        left: 47%;
+        transform: translate(-50%, 50%);
+        width: 437px;
+        white-space: nowrap;
+    }
+    .particles-home {
+        background-position: 50% 55%;
+        background-size: 180px;
+        background-image: url(../../images/abt_logo.png);
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .three_dots_wrapper {
         bottom: -70px;
@@ -24,29 +38,26 @@
     .navbar-toggle {
         padding: 10px;
         margin-top: 5px;
-        border: 2px solid transparent;
+        /* border: 2px solid transparent; */
         border-radius: 0;
         transition: all 0.2s ease 0s;
     }
     .is-sticky .navbar-toggle {
         margin-top: 11px;
     }
-    .navbar-default .navbar-toggle {
-        border-color: #555;
-    }
     .navbar-toggle .icon-bar {
         width: 24px;
         height: 2px;
         border-radius: 0;
     }
-    .navbar-default .navbar-toggle .icon-bar {
+    /* .navbar-default .navbar-toggle .icon-bar {
         background-color: #555;
-    }
-    .navbar-default .navbar-toggle:focus {
+    } */
+    .navbar-default .navbar-toggle.collapsed {
         background-color: transparent;
     }
-    .navbar-default .navbar-toggle:hover {
-        background-color: #555;
+    .navbar-default .navbar-toggle {
+        background-color: #ddd;
     }
     .navbar-default .navbar-toggle:hover .icon-bar {
         background-color: #e51451;
@@ -78,13 +89,15 @@
     .about-contact .row>div {
         margin-bottom: 35px;
     }
+    .about-img.t_center img {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .particles-home {
         /* height: 500px; */
         height: 100vh;
-        background-image: url(../images/par-home-bg_m.jpg);
     }
     .slider-image-one,
     .slider-image-two,
@@ -97,8 +110,10 @@
         min-height: 500px;
         padding: 190px 0 0;
     }
-    .particles-intro {
-        margin-top: 70px;
+    .particles-intro.inline {
+        margin-top: 90px;
+        margin-left: 20px;
+        padding-left: 30px;
     }
     .typed-intro {
         padding-right: 0;
@@ -147,3 +162,62 @@
         float: left;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .particles-home {
+        background-position: 50% 330px;
+        background-size: 110px;
+    }
+    .particles-intro.inline {
+        left: 41%;
+        margin-top: 70px;
+        /* transform: translate(0, 50%); */
+        width: 278px;
+    }
+    .work_bg p {
+        padding: 20px 30px 20px 10px;
+        width: 160px;
+        right: 0;
+    }
+    .work_bg:hover p span {
+        letter-spacing: .5px;
+    }
+    .work_bg p span:after {
+        display: none;
+    }
+    .work_bg.go_right p {
+        right: 0;
+    }
+    .work_bg.go_left p {
+        left: 0;
+    }
+    .work_bg p:before {
+        display: none;
+    }
+    .work_bg p:after {
+        top: 27px;
+        left: 125px;
+    }
+    .svg_rock {
+        max-width: 30px;
+        /* margin-top: -50px; */
+    }
+    #work2 .svg_rock,
+    #work4 .svg_rock {
+        left: 70%;
+    }
+    .home-contact {
+        padding-bottom: 0;
+    }
+    .go_right h3 {
+        /* right: -10px; */
+        bottom: -180px;
+    }
+    .go_left h3 {
+        bottom: -180px;
+        /* left: 8px; */
+    }
+}
+
+
+/* @media only screen and (max-width: 320px) {} */

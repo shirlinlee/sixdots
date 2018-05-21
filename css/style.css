@@ -1484,12 +1484,20 @@ section>* {
 }
 
 .section-heading {
-    background-image: url(../images/about-bg.jpg);
+    background-image: url(../images/about_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 170px 0 75px;
     position: relative;
+}
+
+#cnct {
+    background-image: url(../images/cnct_bg.jpg);
+}
+
+#work {
+    background-image: url(../images/work_bg.jpg);
 }
 
 .section-heading:before {
@@ -1522,6 +1530,16 @@ section>* {
     font-size: 14px;
     color: #555;
     font-weight: 600;
+}
+
+.about-img.t_center>* {
+    padding-bottom: 8px;
+}
+
+.about-img.t_center img {
+    max-width: 250px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .about-content h4 {
@@ -2375,7 +2393,7 @@ section>* {
 }
 
 .filtr-container figure figcaption .fc-icon a img:hover {
-    content: url('../images/focus-hv.png');
+    content: url('/images/focus-hv.png');
 }
 
 figure figcaption .fc-content {
@@ -3407,6 +3425,7 @@ a.filtr-item figure {
     position: relative;
     display: inline-block;
     width: 100%;
+    /* max-height: 350px; */
 }
 
 .work_pic {
@@ -3414,9 +3433,9 @@ a.filtr-item figure {
     width: 100%;
     left: 0;
     -webkit-filter: grayscale(1);
-    -webkit-filter: grayscale(50%);
+    -webkit-filter: grayscale(30%);
     filter: gray;
-    filter: grayscale(50%);
+    filter: grayscale(30%);
     opacity: .8;
 }
 
@@ -3436,11 +3455,13 @@ a.filtr-item {
 .mfp-wrap .work_pic {
     /* float: left; */
     width: 50%;
+    padding-left: 18px;
     -webkit-filter: grayscale(0);
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     position: relative;
     opacity: 1;
+    max-height: 380px;
 }
 
 .mfp-wrap .img-responsive {
@@ -3454,7 +3475,7 @@ a.filtr-item {
     width: 50%;
     height: 100%;
     left: 50%;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .mfp-wrap .get_detail span {
@@ -3470,9 +3491,11 @@ a.filtr-item {
 }
 
 .mfp-wrap .get_detail {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
+    height: 350px;
+    width: 92%;
 }
 
 .mfp-arrow-left:before {
