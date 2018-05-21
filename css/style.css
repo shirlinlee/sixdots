@@ -4034,7 +4034,7 @@ a.filtr-item {
     background-color: #000;
     box-sizing: border-box;
     opacity: 0;
-    transition: opacity .7s .2s, transform .5s;
+    transition: opacity .7s, transform .5s;
 }
 
 .work .animated.go_left.W60 {
@@ -4046,7 +4046,7 @@ a.filtr-item {
     background-color: #e51a52;
     box-sizing: border-box;
     opacity: 0;
-    transition: opacity .7s .2s, transform .5s;
+    transition: opacity .7s, transform .5s;
 }
 
 .work .animated.go_right.W60 {
@@ -4352,4 +4352,12 @@ span.dot.dot3.poA {
     padding: 25px 0;
     letter-spacing: 2px;
     line-height: 1.8;
+}
+
+.navbar-brand{
+    transform: translate(0,-12px)
+}
+
+.is-sticky .navbar-brand{ 
+    transform: translate(0,0)
 }

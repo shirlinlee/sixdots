@@ -161,9 +161,33 @@
         margin: 2px;
         float: left;
     }
+    .mfp-wrap .work_pic, .mfp-wrap .get_detail .fc-content{
+        width: 100%;
+        float: none;
+        position: relative;
+        padding: 0;
+    }
+    .mfp-wrap .get_detail .fc-content{
+        top: 0;
+        left: 0;
+        margin-top: 30px;
+        
+    }
+    .back-to-top{
+        width: 55px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
+    .work .W60 {
+        margin-bottom: 120px;
+        border-width: 10px;
+        width: 70%;
+    }
+
+    .work_bg {
+        height: 50%;
+    }
     .particles-home {
         background-position: 50% 330px;
         background-size: 110px;
@@ -187,9 +211,11 @@
     }
     .work_bg.go_right p {
         right: 0;
+        top: -1px;
     }
     .work_bg.go_left p {
         left: 0;
+        top: -1px;
     }
     .work_bg p:before {
         display: none;
@@ -206,8 +232,13 @@
     #work4 .svg_rock {
         left: 70%;
     }
+    .about-contact .row{
+        padding-bottom: 20px;
+
+    }
     .home-contact {
         padding-bottom: 0;
+        padding-top: 40px;
     }
     .go_right h3 {
         /* right: -10px; */
@@ -216,6 +247,9 @@
     .go_left h3 {
         bottom: -180px;
         /* left: 8px; */
+    }
+    svg {
+        max-width: 200px;
     }
 }
 

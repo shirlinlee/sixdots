@@ -134,6 +134,14 @@ $(document).ready(function() {
 
     });
 
+    $('#portfolio>div').on('click',function(){
+        var index = $(this).attr('id').substring(4,5);
+        window.location="work.html#"+index;
+        
+        // console.log(index)
+
+    })
+
     /***** Contact Form *****/
     function checkmail(input) {
         var pattern1 = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -180,12 +188,15 @@ $(document).ready(function() {
 
     /***** Pre-Loader *****/
     $(window).on('load', function() {
+        var hash = location.hash;
+        var fiterEl = 'all';
+        console.log(hash)
         $(".preloader").fadeOut("slow");
         /***** Filterizer *****/
         $('.filtr-container').filterizr({
             layout: 'sameWidth',
             easing: 'ease-out',
-            filter: 'all',
+            filter: fiterEl,
             selector: '.filtr-container',
             setupControls: true
         });
