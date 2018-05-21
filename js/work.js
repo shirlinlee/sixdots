@@ -1,11 +1,13 @@
+var hash = location.hash.replace('#', '');
+
 $(document).ready(function() {
     "use strict";
     $('.filtr-item figure').each(function() {
-        const str = $(this).attr('id').substr(4, 4)
-        $(this).find('.work_pic').attr('src', "images/works/" + str + ".png");
-        // console.log("images/works/" + str + ".png")
-    })
-    /***** Magnific-popup *****/
+            const str = $(this).attr('id').substr(4, 4)
+            $(this).find('.work_pic').attr('src', "images/works/" + str + ".png");
+            // console.log("images/works/" + str + ".png")
+        })
+        /***** Magnific-popup *****/
     $('.filtr-item').magnificPopup({
         type: 'inline',
         gallery: {
@@ -16,12 +18,17 @@ $(document).ready(function() {
 
     });
 
+    //Filter controls
+    $('.portfolio-filter li').on('click', function(e) {
+        $('.portfolio-filter li').removeClass('active');
+        $(this).addClass('active');
+    });
 
     /***** Pre-Loader *****/
     $(window).on('load', function() {
-        
-        var fiterEl = 'all';
+        var fiterEl = (hash === '') ? 'all' : hash;
         console.log(hash)
+
         /***** Filterizer *****/
         $('.filtr-container').filterizr({
             layout: 'sameWidth',
@@ -30,11 +37,12 @@ $(document).ready(function() {
             selector: '.filtr-container',
             setupControls: true
         });
-        //Filter controls
-        $('.portfolio-filter li').on('click', function(e) {
-            $('.portfolio-filter li').removeClass('active');
-            $(this).addClass('active');
-        });
+
+        var currentTab = Number(fiterEl);
+        if (hash === '') currentTab = 0;
+        $('.portfolio-filter li').eq(currentTab).addClass('active');
+        history.replaceState({}, document.title, "work.html");
+
     });
 
 });

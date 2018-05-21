@@ -161,30 +161,29 @@
         margin: 2px;
         float: left;
     }
-    .mfp-wrap .work_pic, .mfp-wrap .get_detail .fc-content{
+    .mfp-wrap .work_pic,
+    .mfp-wrap .get_detail .fc-content {
         width: 100%;
         float: none;
         position: relative;
         padding: 0;
     }
-    .mfp-wrap .get_detail .fc-content{
+    .mfp-wrap .get_detail .fc-content {
         top: 0;
         left: 0;
         margin-top: 30px;
-        
     }
-    .back-to-top{
+    .back-to-top {
         width: 55px;
     }
 }
 
 @media only screen and (max-width: 425px) {
     .work .W60 {
-        margin-bottom: 120px;
+        margin-bottom: 130px;
         border-width: 10px;
         width: 70%;
     }
-
     .work_bg {
         height: 50%;
     }
@@ -232,24 +231,43 @@
     #work4 .svg_rock {
         left: 70%;
     }
-    .about-contact .row{
+    .about-contact .row {
         padding-bottom: 20px;
-
     }
     .home-contact {
         padding-bottom: 0;
         padding-top: 40px;
     }
     .go_right h3 {
-        /* right: -10px; */
         bottom: -180px;
     }
     .go_left h3 {
         bottom: -180px;
-        /* left: 8px; */
     }
     svg {
         max-width: 200px;
+    }
+    .work {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .work .W60 {
+        margin-bottom: 120px;
+        border-width: 8px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .work .W60 {
+        margin-bottom: 110px;
+    }
+    .go_right h3 {
+        bottom: -166px;
+    }
+    .go_left h3 {
+        bottom: -166px;
     }
 }
 
