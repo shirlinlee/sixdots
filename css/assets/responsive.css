@@ -95,6 +95,28 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .mfp-wrap .work_pic{
+         display: block;
+         max-height: initial;
+    }
+    .mfp-content{
+        vertical-align: top;
+    }
+    .mfp-arrow{
+        /* top: 200px; */
+    }
+    .mfp-arrow-right {
+        right: -20px;
+    }
+    .mfp-arrow-left {
+        left: -20px;
+    }
+    .mfp-wrap .work_frame {
+        display: none;      
+        width: 100%;
+        background-position: center bottom;
+       
+    }
     .particles-home {
         /* height: 500px; */
         height: 100vh;
@@ -187,6 +209,7 @@
     .work_bg {
         height: 50%;
     }
+
     .particles-home {
         background-position: 50% 330px;
         background-size: 110px;

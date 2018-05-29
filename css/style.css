@@ -3464,9 +3464,16 @@ a.filtr-item {
     max-height: 380px;
 }
 
-.mfp-wrap .img-responsive {
+.mfp-wrap img {
     display: none;
 }
+
+.mfp-wrap .work_frame {
+    display: block;
+
+}
+
+
 
 .mfp-wrap .get_detail .fc-content {
     position: absolute;
@@ -4039,6 +4046,14 @@ a.filtr-item {
 
 .work .animated.go_left.W60 {
     opacity: 1;
+}
+
+.work_frame {
+    display: none;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
 }
 
 .work .go_right.W60 {
