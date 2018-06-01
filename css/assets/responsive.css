@@ -104,6 +104,10 @@
     }
     .mfp-arrow{
         /* top: 200px; */
+        margin-top: -80px;
+    }
+    .mfp-wrap {
+        overflow: hidden;
     }
     .mfp-arrow-right {
         right: -20px;
@@ -272,6 +276,14 @@
     }
     .work {
         margin-bottom: 100px;
+    }
+    .mfp-arrow-right {
+        transform: scale(.6);
+        right: -30px;
+    }
+    .mfp-arrow-left {
+        transform: scale(.6);
+        left: -30px;
     }
 }
 
