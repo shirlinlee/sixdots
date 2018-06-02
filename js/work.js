@@ -5,8 +5,8 @@ $(document).ready(function() {
     $('.filtr-item figure').each(function() {
             const str = $(this).attr('id').substr(4, 4)
             $(this).find('.work_pic').attr('src', "images/works/" + str + ".png");
-            $(this).find('.work_frame').css({ backgroundImage:"url(/images/works/" + str + ".png)"})
-            
+            $(this).find('.work_frame').css({ backgroundImage: "url(images/works/" + str + ".png)" })
+
             // console.log("images/works/" + str + ".png")
         })
         /***** Magnific-popup *****/

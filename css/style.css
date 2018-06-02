@@ -2393,7 +2393,7 @@ section>* {
 }
 
 .filtr-container figure figcaption .fc-icon a img:hover {
-    content: url('/images/focus-hv.png');
+    content: url('../images/focus-hv.png');
 }
 
 figure figcaption .fc-content {
@@ -2403,6 +2403,12 @@ figure figcaption .fc-content {
     display: inline-block;
     background: #fff;
     padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+.mfp-wrap figcaption .fc-content {
+    padding: 0 0 0 30px;
+    /* letter-spacing: 1px; */
 }
 
 figure figcaption .fc-content h4 {
@@ -3470,10 +3476,7 @@ a.filtr-item {
 
 .mfp-wrap .work_frame {
     display: block;
-
 }
-
-
 
 .mfp-wrap .get_detail .fc-content {
     position: absolute;
@@ -3489,7 +3492,7 @@ a.filtr-item {
     display: inline-block;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 16px;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-top: 6px;
 }
 
@@ -4369,10 +4372,10 @@ span.dot.dot3.poA {
     line-height: 1.8;
 }
 
-.navbar-brand{
-    transform: translate(0,-12px)
+.navbar-brand {
+    transform: translate(0, -12px)
 }
 
-.is-sticky .navbar-brand{ 
-    transform: translate(0,0)
+.is-sticky .navbar-brand {
+    transform: translate(0, 0)
 }
