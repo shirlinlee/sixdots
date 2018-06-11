@@ -5,6 +5,11 @@
     .team .row>div {
         padding: 0 5px;
     }
+    .mfp-wrap .img_wrap.vertical .work_pic {
+        height: 75vh;
+        left: 16%;
+        transform: translate(-15%, -17%);
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -95,14 +100,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .mfp-wrap .work_pic{
-         display: block;
-         max-height: initial;
+    .mfp-wrap .img_wrap.vertical .work_pic {
+        width: 100%;
+        height: auto;
+        transform: none;
+        left: 0;
     }
-    .mfp-content{
+    .mfp-wrap .img_wrap .work_pic {
+        transform: none;
+        left: 0;
+    }
+    .mfp-wrap .img_wrap {
+        height: auto;
+        position: relative;
+    }
+    .mfp-content {
         vertical-align: top;
     }
-    .mfp-arrow{
+    .mfp-arrow {
         /* top: 200px; */
         margin-top: -80px;
     }
@@ -116,10 +131,9 @@
         left: -20px;
     }
     .mfp-wrap .work_frame {
-        display: none;      
+        display: none;
         width: 100%;
         background-position: center bottom;
-       
     }
     .particles-home {
         /* height: 500px; */
@@ -198,6 +212,8 @@
         top: 0;
         left: 0;
         margin-top: 30px;
+        position: relative;
+        height: initial;
     }
     .back-to-top {
         width: 55px;
@@ -213,7 +229,6 @@
     .work_bg {
         height: 50%;
     }
-
     .particles-home {
         background-position: 50% 330px;
         background-size: 110px;

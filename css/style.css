@@ -2357,7 +2357,7 @@ section>* {
     margin: 0;
     position: relative;
     /* border: 1px solid #eee; */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     overflow: hidden;
     background-color: #efefef;
 }
@@ -3431,11 +3431,11 @@ a.filtr-item figure {
     position: relative;
     display: inline-block;
     width: 100%;
-    /* max-height: 350px; */
+    max-height: 350px;
 }
 
 .work_pic {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     left: 0;
     -webkit-filter: grayscale(1);
@@ -3460,31 +3460,44 @@ a.filtr-item {
 
 .mfp-wrap .work_pic {
     /* float: left; */
-    width: 50%;
+    width: 45%;
     padding-left: 18px;
     -webkit-filter: grayscale(0);
-    -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    position: relative;
+    position: absolute;
     opacity: 1;
-    max-height: 380px;
+    top: 50%;
+    left: 6%;
+    transform: translate(0, -48%);
 }
 
-.mfp-wrap img {
-    display: none;
+.mfp-wrap .img_wrap.vertical {}
+
+.mfp-wrap .img_wrap.vertical .work_pic {
+    width: auto;
+    height: 83vh;
+    left: 18%;
+    top: 0;
+    transform: translate(-21%, -28%);
 }
 
 .mfp-wrap .work_frame {
-    display: block;
+    /* display: block; */
+}
+
+.mfp-wrap .img_wrap {
+    position: initial;
+    max-height: initial;
+    height: 0;
 }
 
 .mfp-wrap .get_detail .fc-content {
-    position: absolute;
+    position: relative;
     background: none;
     color: #fff;
-    width: 50%;
+    width: 46%;
     height: 100%;
-    left: 50%;
+    left: 52%;
     /* overflow: scroll; */
 }
 
@@ -3501,10 +3514,10 @@ a.filtr-item {
 }
 
 .mfp-wrap .get_detail {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    height: 350px;
+    /* position: relative; */
+    /* height: 330px; */
     width: 92%;
 }
 
