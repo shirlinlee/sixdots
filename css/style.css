@@ -4392,3 +4392,7 @@ span.dot.dot3.poA {
 .is-sticky .navbar-brand {
     transform: translate(0, 0)
 }
+
+.mfp-container * {
+    transition: all .4s;
+}
